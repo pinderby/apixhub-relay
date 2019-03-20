@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "relay-test2": {
+      "schemaPath": "schema.graphql",
+      "extensions": {
+        "endpoints": {
+          "default": "http://localhost:4567/graphql"
+        }
+      }
+    }
+  }
+}
