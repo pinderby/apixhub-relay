@@ -2,6 +2,7 @@
 
 # generated
 /src/__generated__
+/src/*/__generated__
 
 # dependencies
 /node_modules
