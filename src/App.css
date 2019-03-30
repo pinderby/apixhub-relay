@@ -20,8 +20,13 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61dafb !important;
 }
+
+.App-link:hover {
+  text-decoration: underline !important;
+}
+
 
 @keyframes App-logo-spin {
   from {
