@@ -25,8 +25,8 @@ class Login extends Component {
     event.preventDefault();
     event.stopPropagation();
 
-    // TODO --DTM-- Login
-  
+    // Log in
+    this.props.login(this.state.username, this.state.password);
   }
   
   render() {

@@ -49,9 +49,16 @@ class Signup extends Component {
     if (!invalid) {
       // Change validated to true to show validations
       this.setState({ validated: true });
-    }
 
-    // TODO --DTM-- Sign up
+      // Sign up for new user account
+      this.props.signup(
+        this.state.firstname,
+        this.state.lastname,
+        this.state.username,
+        this.state.email,
+        this.state.password
+      );
+    }
   }
 
   validatePassword() {
