@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import graphql from "babel-plugin-relay/macro";
 import { Redirect } from 'react-router-dom';
 import { QueryRenderer, fetchQuery, commitMutation } from "react-relay";
-import logo from '../assets/apixhub-icon.svg';
 import RelayEnvironment from "../RelayEnvironment.js";
 import Login from './Login.js';
 import Signup from './Signup.js';
-import TestChild from '../TestChild';
 // import logo from '../logo.svg';
 
 class Splash extends Component {
@@ -83,9 +81,6 @@ class Splash extends Component {
 
   fetchQuery(RelayEnvironment, query, variables)
     .then(data => {
-      // access the graphql response
-      console.log(data);
-
       // Save token and username
       localStorage.setItem('user_token', data.user.token);
       localStorage.setItem('username', data.user.username);
@@ -101,8 +96,6 @@ class Splash extends Component {
 
   // Sign up new user
   signup(firstname, lastname, username, email, password) {
-    console.log(firstname, lastname, username, email, password); // TODO --DTM-- Remove
-
     const variables = {
       input: {
         attributes: {
@@ -141,8 +134,7 @@ class Splash extends Component {
         mutation,
         variables,
         onCompleted: (response, errors) => {
-          console.log('Response received from server.');
-          console.log(response); // TODO --DTM-- Remove
+          console.log("Response: ", response); // TODO --DTM-- Remove
 
           // Save token and username
           localStorage.setItem('user_token', response.user.token);
@@ -167,9 +159,9 @@ class Splash extends Component {
 
     return (
       <header className="App-header">
-        <div className="home">
-          <div className="home-header-container">
-            <div className="home-header">
+        <div className="splash">
+          <div className="splash-header-container">
+            <div className="splash-header">
               {/* { !(_.isEmpty(this.state.errors)) && 
                 <div className="errors-alert alert alert-danger" role="alert">
                   {this.renderErrors()}
@@ -178,71 +170,12 @@ class Splash extends Component {
               {form} */}
             </div>
           </div>
-          <p className="home-intro">
-            {/* To get started, edit <code>src/Home.js</code> and save to reload. */}
-          </p>
         </div>
-
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Welcome to aPixHub</h2>
-
         {this.state.isLoggingIn ? (
           <Login login={this.login} changeForm={() => this.changeForm(false)} />
         ) : (
           <Signup signup={this.signup} changeForm={() => this.changeForm(true)} />
         )}
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {/* <QueryRenderer
-          environment={RelayEnvironment}
-          query={graphql`
-            query AppQuery {
-              version
-            }
-          `}
-          variables={{}}
-          render={({error, props}) => {
-            if (error) {
-              return <div>Error!</div>;
-            }
-            if (!props) {
-              return <div>Loading...</div>;
-            }
-            return <div>Version: {props.version}</div>;
-          }}
-        /> */}
-        {/* <QueryRenderer
-          environment={RelayEnvironment}
-          query={graphql`
-            query SplashQuery {
-              repo(username: "gweeks", reponame: "IMDB") {
-                id
-                ...TestChild_repo
-              }
-            }
-          `}
-          variables={{}}
-          render={({error, props}) => {
-            if (error) {
-              return <div>Error!</div>;
-            }
-            if (!props) {
-              return <div>Loading...</div>;
-            }
-            console.log("props: ", props);
-            return <div>
-                    id: {props.repo.id}
-                    <TestChild repo={props.repo} component="TestChild" />
-                  </div>;
-          }}
-        /> */}
       </header>
     )
   }

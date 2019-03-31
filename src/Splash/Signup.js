@@ -90,7 +90,9 @@ class Signup extends Component {
   render() {
     const { validated } = this.state;
     return(
-      <Form validated={validated} onSubmit={e => this.handleSubmit(e)}>
+      <Form className="splash-form" 
+            validated={validated} 
+            onSubmit={e => this.handleSubmit(e)}>
         <Form.Group controlId="firstname">
           <Form.Label>First Name:</Form.Label>
           <Form.Control 

@@ -1,0 +1,14 @@
+.template-item {
+  position: relative !important;
+  text-align: center;
+}
+
+.template-label-wrapper .btn {
+  right: 12px;
+  position: absolute;
+}
+
+.template-label {
+    font-size: 24px;
+    font-weight: bold;
+}

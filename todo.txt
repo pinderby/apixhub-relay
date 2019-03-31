@@ -1,9 +1,10 @@
 Splash
 [ ] Display server side validation errors
 [ ] Tests
-[ ] Clean up Splash.js JSX
+[x] Clean up Splash.js JSX
 [ ] Log out
-[ ] Ask Chris about sign up issues, no token and error log
+[ ] Clean up all CSS
+[ ] Clean up TemplatesPanel.js
 
 "@babel/runtime": "7.3.1"
 "regenerator-runtime": "0.12.0"

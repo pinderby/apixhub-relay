@@ -4,8 +4,9 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 200px;
   pointer-events: none;
+  margin-bottom: 20px;
 }
 
 .App-header {
@@ -27,6 +28,45 @@
   text-decoration: underline !important;
 }
 
+.login-container {
+  text-align: center;
+}
+
+.splash-form {
+  min-width: 300px;
+  display: inline-block;
+}
+
+.navbar {
+  border-radius: 0px !important;
+}
+
+.navbar .searchbar {
+  width: 60% !important;
+  display: inline !important;
+  float: left;
+  margin-left: 20px;
+}
+
+.navbar-brand a {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-brand a:hover {
+  text-decoration: none;
+}
+
+.logout-nav-item {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
 
 @keyframes App-logo-spin {
   from {

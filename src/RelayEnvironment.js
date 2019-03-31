@@ -5,25 +5,6 @@ const PROD_ENDPOINT = 'https://apix.rocks'
 
 const API_ENDPOINT = DEV_ENDPOINT
 
-// function fetchQuery(
-//   operation,
-//   variables,
-// ) {
-//   return fetch(API_ENDPOINT, {
-//     method: 'POST',
-//     headers: {
-      // 'Accept': 'application/json',
-      // 'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify({
-//       query: operation.text,
-//       variables,
-//     }),
-//   }).then(response => {
-//     return response.json()
-//   })
-// }
-
 async function fetchQuery(operation, variables) {
   const response = await fetch(API_ENDPOINT, {
     method: "POST",

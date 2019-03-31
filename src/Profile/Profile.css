@@ -1,0 +1,29 @@
+.profile-area {
+  padding: 20px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.repo-card-container {
+  padding: 20px;
+}
+
+.repo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  min-height: 100px;
+}
+
+.repo-card-container a:hover {
+  text-decoration: none;
+}
+
+.repo-card:hover {
+  background-color: #EEE;
+}
+
+.repo-card:active {
+  background-color: #DDD;
+}

@@ -1,0 +1,467 @@
+{
+  "repos": [
+    {
+      "id": "549fa2fc-4643-47d9-9388-bb13e7b8da84",
+      "name": "Movies",
+      "user_id": "06147f8e-7b4e-49b8-9ec4-0b482ed581f4",
+      "created_at": "2018-06-02T02:37:04.884Z",
+      "updated_at": "2018-06-02T02:37:04.884Z"
+    }
+  ],
+  "templates": [
+    {
+      "id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+      "label": "movie",
+      "created_at": "2017-09-08T16:21:02.116Z",
+      "updated_at": "2017-09-08T16:21:02.116Z",
+      "properties": [
+        {
+          "id": "c60b7311-b3d8-4812-a1c1-33669b8c9c2a",
+          "key": "name",
+          "value_type": "string",
+          "node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+          "created_at": "2017-09-08T16:21:02.026Z",
+          "updated_at": "2017-09-08T16:21:02.122Z"
+        }
+      ],
+      "in_relationships": [
+        {
+          "id": "80174196-958a-4038-a739-8fa17c81e480",
+          "rel_type": "DIRECTED",
+          "to_node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+          "from_node_id": "Director",
+          "from_node_id_orig": "cb8677a1-6106-4010-933d-db4522302c83",
+          "created_at": "2017-09-08T16:21:02.178Z",
+          "updated_at": "2017-09-08T16:21:02.178Z",
+          "properties": [
+            {
+              "id": "c60b7311-b3d8-4812-a1c1-33669b8c9c2a",
+              "key": "name",
+              "value_type": "string",
+              "node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+              "created_at": "2017-09-08T16:21:02.026Z",
+              "updated_at": "2017-09-08T16:21:02.122Z"
+            }
+          ]
+        }
+      ],
+      "out_relationships": [
+        {
+          "id": "80174196-958a-4038-a739-8fa17c81e490",
+          "rel_type": "STARRING",
+          "to_node_id": "Actor",
+          "to_node_id_orig": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+          "from_node_id": "cb8677a1-6106-4010-933d-db4522302c83",
+          "created_at": "2017-09-08T16:21:02.178Z",
+          "updated_at": "2017-09-08T16:21:02.178Z",
+          "properties": [
+            {
+              "id": "c60b7311-b3d8-4812-a1c1-33669b8c9c2a",
+              "key": "name",
+              "value_type": "string",
+              "node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+              "created_at": "2017-09-08T16:21:02.026Z",
+              "updated_at": "2017-09-08T16:21:02.122Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3152f3c7-ebc8-4e7a-981c-11951f65becc",
+      "label": "director",
+      "created_at": "2017-09-08T16:21:02.116Z",
+      "updated_at": "2017-09-08T16:21:02.116Z",
+      "properties": [
+        {
+          "id": "c60b7311-b3d8-4812-a1c1-33669b8c9c2a",
+          "key": "name",
+          "value_type": "string",
+          "node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+          "created_at": "2017-09-08T16:21:02.026Z",
+          "updated_at": "2017-09-08T16:21:02.122Z"
+        }
+      ],
+      "in_relationships": [
+      ],
+      "out_relationships": [
+        {
+          "id": "80174196-958a-4038-a739-8fa17c81e480",
+          "rel_type": "DIRECTED",
+          "to_node_id": "Movie",
+          "to_node_id_orig": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+          "from_node_id": "cb8677a1-6106-4010-933d-db4522302c83",
+          "created_at": "2017-09-08T16:21:02.178Z",
+          "updated_at": "2017-09-08T16:21:02.178Z",
+          "properties": [
+            {
+              "id": "c60b7311-b3d8-4812-a1c1-33669b8c9c2a",
+              "key": "name",
+              "value_type": "string",
+              "node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+              "created_at": "2017-09-08T16:21:02.026Z",
+              "updated_at": "2017-09-08T16:21:02.122Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3152f3c7-ebc8-4e7a-981c-11951f65beee",
+      "label": "genre",
+      "created_at": "2017-09-08T16:21:02.116Z",
+      "updated_at": "2017-09-08T16:21:02.116Z",
+      "properties": [
+        {
+          "id": "c60b7311-b3d8-4812-a1c1-33669b8c9c2a",
+          "key": "name",
+          "value_type": "string",
+          "node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+          "created_at": "2017-09-08T16:21:02.026Z",
+          "updated_at": "2017-09-08T16:21:02.122Z"
+        }
+      ],
+      "in_relationships": [],
+      "out_relationships": []
+    },
+    {
+      "id": "3152f3c7-ebc8-4e7a-981c-11951f65beff",
+      "label": "studio",
+      "created_at": "2017-09-08T16:21:02.116Z",
+      "updated_at": "2017-09-08T16:21:02.116Z",
+      "properties": [
+        {
+          "id": "c60b7311-b3d8-4812-a1c1-33669b8c9c2a",
+          "key": "name",
+          "value_type": "string",
+          "node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+          "created_at": "2017-09-08T16:21:02.026Z",
+          "updated_at": "2017-09-08T16:21:02.122Z"
+        },
+        {
+          "id": "c60b7311-b3d8-4812-a1c1-33669b8c9j9d",
+          "key": "founded",
+          "value_type": "integer",
+          "node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+          "created_at": "2017-09-08T16:21:02.026Z",
+          "updated_at": "2017-09-08T16:21:02.122Z"
+        }
+      ],
+      "in_relationships": [],
+      "out_relationships": []
+    },
+    {
+      "id": "3152f3c7-ebc8-4e7a-981c-11951f65begg",
+      "label": "production_company",
+      "created_at": "2017-09-08T16:21:02.116Z",
+      "updated_at": "2017-09-08T16:21:02.116Z",
+      "properties": [
+        {
+          "id": "c60b7311-b3d8-4812-a1c1-33669b8c9c2a",
+          "key": "name",
+          "value_type": "string",
+          "node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+          "created_at": "2017-09-08T16:21:02.026Z",
+          "updated_at": "2017-09-08T16:21:02.122Z"
+        }
+      ],
+      "in_relationships": [],
+      "out_relationships": []
+    }
+  ],
+  "relationship_templates": [
+    {
+      "id": "80174196-958a-4038-a739-8fa17c81e480",
+      "rel_type": "DIRECTED",
+      "to_node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+      "from_node_id_name": "Director",
+      "from_node_id": "3152f3c7-ebc8-4e7a-981c-11951f65becc",
+      "created_at": "2017-09-08T16:21:02.178Z",
+      "updated_at": "2017-09-08T16:21:02.178Z",
+      "properties": [
+        {
+          "id": "c60b7311-b3d8-4812-a1c1-33669b8c9c2a",
+          "key": "name",
+          "value_type": "string",
+          "node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+          "created_at": "2017-09-08T16:21:02.026Z",
+          "updated_at": "2017-09-08T16:21:02.122Z"
+        }
+      ]
+    },
+    {
+      "id": "80174196-958a-4038-a739-8fa17c81e490",
+      "rel_type": "PRODUCED",
+      "to_node_id_name": "Movie",
+      "to_node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+      "from_node_id": "3152f3c7-ebc8-4e7a-981c-11951f65begg",
+      "created_at": "2017-09-08T16:21:02.178Z",
+      "updated_at": "2017-09-08T16:21:02.178Z",
+      "properties": [
+        {
+          "id": "c60b7311-b3d8-4812-a1c1-33669b8c9c2a",
+          "key": "name",
+          "value_type": "string",
+          "node_id": "3152f3c7-ebc8-4e7a-981c-11951f65bebb",
+          "created_at": "2017-09-08T16:21:02.026Z",
+          "updated_at": "2017-09-08T16:21:02.122Z"
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "nodes" : {
+    "movie" : [
+      {
+        "properties": {
+          "name": "Black Panther"
+        },
+        "label": "movie",
+        "nid": 26
+      },
+      {
+        "properties": {
+          "name": "Avengers: Infinity War"
+        },
+        "label": "movie",
+        "nid": 27
+      },
+      {
+        "properties": {
+          "name": "A QUIET PLACE"
+        },
+        "label": "movie",
+        "nid": 28
+      },
+      {
+        "properties": {
+          "name": "Solo: A Star Wars Story"
+        },
+        "label": "movie",
+        "nid": 29
+      },
+      {
+        "properties": {
+          "name": "Ready Player One"
+        },
+        "label": "movie",
+        "nid": 30
+      }
+    ],
+    "director" : [
+      {
+        "properties": {
+          "name": "Ryan Coogler"
+        },
+        "label": "director",
+        "nid": 26
+      },
+      {
+        "properties": {
+          "name": "Anthony Russo, Joe Russo"
+        },
+        "label": "director",
+        "nid": 27
+      },
+      {
+        "properties": {
+          "name": "John Krasinski"
+        },
+        "label": "director",
+        "nid": 28
+      },
+      {
+        "properties": {
+          "name": "Ron Howard"
+        },
+        "label": "director",
+        "nid": 29
+      },
+      {
+        "properties": {
+          "name": "Steven Spielberg"
+        },
+        "label": "director",
+        "nid": 30
+      }
+    ],
+    "genre" : [
+      {
+        "properties": {
+          "name": "Action"
+        },
+        "label": "genre",
+        "nid": 26
+      },
+      {
+        "properties": {
+          "name": "Adventure"
+        },
+        "label": "genre",
+        "nid": 27
+      },
+      {
+        "properties": {
+          "name": "Comedy"
+        },
+        "label": "genre",
+        "nid": 28
+      },
+      {
+        "properties": {
+          "name": "Drama"
+        },
+        "label": "genre",
+        "nid": 29
+      },
+      {
+        "properties": {
+          "name": "Romance"
+        },
+        "label": "genre",
+        "nid": 30
+      },
+      {
+        "properties": {
+          "name": "Horror"
+        },
+        "label": "genre",
+        "nid": 31
+      },
+      {
+        "properties": {
+          "name": "Fantasy"
+        },
+        "label": "genre",
+        "nid": 32
+      },
+      {
+        "properties": {
+          "name": "Science Fiction"
+        },
+        "label": "genre",
+        "nid": 33
+      }
+    ],
+    "studio" : [
+      {
+        "properties": {
+          "name": "Walt Disney Pictures",
+          "founded": 1923
+        },
+        "label": "studio",
+        "nid": 26
+      },
+      {
+        "properties": {
+          "name": "Marvel Studios",
+          "founded": 1993
+        },
+        "label": "studio",
+        "nid": 27
+      },
+      {
+        "properties": {
+          "name": "Paramount Pictures",
+          "founded": 1912
+        },
+        "label": "studio",
+        "nid": 28
+      },
+      {
+        "properties": {
+          "name": "Warner Bros. Pictures",
+          "founded": 1923
+        },
+        "label": "studio",
+        "nid": 29
+      }
+    ],
+    "production_company" : [
+      {
+        "properties": {
+          "name": "Marvel Studios"
+        },
+        "label": "production_company",
+        "nid": 26
+      },
+      {
+        "properties": {
+          "name": "Platinum Dunes"
+        },
+        "label": "production_company",
+        "nid": 27
+      },
+      {
+        "properties": {
+          "name": "Lucasfilm"
+        },
+        "label": "production_company",
+        "nid": 28
+      },
+      {
+        "properties": {
+          "name": "Walt Disney Pictures"
+        },
+        "label": "production_company",
+        "nid": 29
+      },
+      {
+        "properties": {
+          "name": "Allison Shearmur Productions"
+        },
+        "label": "production_company",
+        "nid": 31
+      },
+      {
+        "properties": {
+          "name": "Sunday Night"
+        },
+        "label": "production_company",
+        "nid": 32
+      },
+      {
+        "properties": {
+          "name": "Amblin Entertainment"
+        },
+        "label": "production_company",
+        "nid": 33
+      },
+      {
+        "properties": {
+          "name": "De Line Pictures"
+        },
+        "label": "production_company",
+        "nid": 34
+      },
+      {
+        "properties": {
+          "name": "Dune Entertainment"
+        },
+        "label": "production_company",
+        "nid": 35
+      }
+    ]
+  },
+  "mockSettings": {
+    "repos": {
+      "Movies": {
+        "movie": {},
+        "director": {},
+        "genre": {},
+        "studio": {},
+        "production_company": {}
+      }
+    }
+  },
+  "mockMatch": {
+    "path": "/u/:user/:repo",
+    "url": "/u/pinderby/Movies",
+    "isExact": true,
+    "params": {
+      "user": "pinderby",
+      "repo": "Movies"
+    }
+  }
+
+}
